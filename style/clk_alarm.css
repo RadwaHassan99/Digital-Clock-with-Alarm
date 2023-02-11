@@ -1,0 +1,265 @@
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+html{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%; 
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+#container{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    margin: 5% 25%;
+    border: 5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 20%;
+    box-shadow: 5px 10px black;
+
+}
+
+#clk{
+
+    border: 5px solid;
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    font-family: 'Digital Numbers', sans-serif;
+    font-size: x-large;
+    background-color: black;
+    color: chartreuse;
+    border: 10px solid black;
+    border-radius: 10%;
+}
+
+h2{
+    font-size: xx-large; 
+    font-weight:bolder;
+    display: block;
+    margin-top: 10%;
+}
+
+#clk p{
+    font-size: small; 
+    font-weight: bold;
+}
+
+#alarm{
+    border: 5px solid;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #00b09b, #96c93d);
+    border-radius: 20%;
+}
+
+input{
+    width: 10%;
+    height: 20%;
+    border: 5px solid;
+}
+
+select{
+    width: 12%;
+    height: 27%;
+    border: 5px solid;
+}
+
+#alarmForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 10% 5%;
+    width: 100%;
+    height: 40%;   
+}
+
+#alarmForm input{
+    width: 15%;
+    height: 30%;
+    border: 2px solid rgb(151, 3, 69);
+    border-radius: 15%;
+    font-size: larger; 
+    color: rgb(8, 3, 55);
+    background-color:antiquewhite;
+    box-shadow: 5px 10px 5px rgb(249, 145, 162) inset;
+    font-weight: 800;
+    text-shadow: 1px 0px;
+}
+
+#alarmForm input:disabled{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+
+#alarmForm select{
+    width: 15%;
+    height: 35%;
+    border: 3px solid rgb(151, 3, 69);
+    border-radius:15%;
+    font-size: larger;
+    color: rgb(8, 3, 55);
+    font-weight: 800;
+    background-color:antiquewhite;
+    box-shadow: 4px 8px 4px rgb(249, 145, 162) inset;
+}
+
+#alarmForm select:disabled{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+
+#alarmCtrl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 10% 10%;
+    width: 100%;
+    height: 40%;
+}
+
+#alarmCtrl button{
+    width: 15%;
+    height: 55%;
+    border: 1px solid;
+    border-radius: 50%;   
+    text-align: center;
+    font-size:100%;
+    color: aliceblue;
+    background-color:rgb(169, 4, 78);
+    cursor: pointer;
+    text-shadow: 1px 0px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    box-shadow: 2px 5px black;
+}
+
+#icon{
+    margin-left: 45%;
+    margin-top: 5px;
+}
+
+#alarmCtrl button:hover{
+    background-color: rgb(14, 78, 3);
+}
+
+@media only screen and (max-width: 1100px) {
+    h2{
+        font-size: large; 
+        font-weight:bolder;
+        display: block;
+        margin-top: 10%;
+    }
+    #alarm{
+        border: 5px solid;
+        width: 50%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to right, #00b09b, #96c93d);
+        border-radius: 20%;
+    }
+    #alarmCtrl{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        gap: 5% 5%;
+        width: 100%;
+        height: 25%;
+    }   
+    
+    #alarmCtrl button{
+        width: 50%;
+        height: 70%;
+        border: 1px solid;
+        border-radius: 50%;   
+        text-align: center;
+        font-size:100%;
+        color: aliceblue;
+        background-color:rgb(169, 4, 78);
+        cursor: pointer;
+        text-shadow: 1px 0px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        box-shadow: 2px 5px black;
+    }
+
+    #alarmForm{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        gap: 1px;
+        width: 100%;
+        height: 50%;   
+    }
+
+    #alarmForm input{
+        display: block;
+        width: 50%;
+        height: 10%;
+        border: 2px solid rgb(151, 3, 69);
+        border-radius: 15%;
+        font-size: small; 
+        color: rgb(8, 3, 55);
+        background-color:antiquewhite;
+        font-weight: 200;
+        text-shadow: 1px 0px;
+        box-shadow: 5px 10px 5px pink inset;
+        opacity: 100%;
+    }
+
+    #alarmForm input:disabled{
+        background-color: black;
+        color:white;
+        text-align: center;
+    }
+    
+    #alarmForm select{
+        width: 50%;
+        height: 12%;
+        border: 1px solid rgb(151, 3, 69);
+        border-radius:15%;
+        font-size: small;
+        color: rgb(8, 3, 55);
+        font-weight: 200;
+        background-color:antiquewhite;
+        opacity: 100%;
+    }
+    #alarmForm select:disabled{
+        background-color: black;
+        color:white;
+        text-align: center;
+    }
+
+
+    #icon{
+        margin-left: 37%;
+        margin-top: 0px;
+    }
+    
+}
+
+
+

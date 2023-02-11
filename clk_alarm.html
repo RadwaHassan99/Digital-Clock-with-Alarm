@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/clk_alarm.css">
+    <link href="https://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Digital clock with Alarm</title>
+</head>
+<body id="body">
+  <div id="container">
+    <div id="clk">
+      <h2 id="time"></h2>
+      <p id="date"></p>
+      <p id="calender"></p>
+    </div>
+
+    <div id="alarm">
+      <i class="material-icons" style="font-size:36px" id="icon">alarm</i>
+      <div id="alarmForm">
+        <input id="hour" type="number" min="0" max="12" value="0">
+        <input id="minute" type="number" min="0" max="60" value="0">
+        <input id="second" type="number" min="0" max="60" value="0">
+        <select id="zone">
+            <option value="am">AM</option>
+            <option value="pm">PM</option>
+          </select>
+      </div>
+
+        <div id="alarmCtrl">
+          <button id="set">Set</button> 
+          <button id="clr">clr</button>
+          <button id="snz">
+            5min
+          </button> 
+        </div>
+
+    </div>
+  </div>
+      <script src="script/clk_alarm.js"></script>
+</body>
+</html>
