@@ -47,6 +47,7 @@ setInterval(function(){
 
     if(hours===(retrievedObject.substring(0,2)) && (minutes===(retrievedObject.substring(3,5))) && (seconds===(retrievedObject.substring(6,8))) && (AmOrPm===(retrievedObject.substring(9,11)))){
       console.log("alarm");
+      alert("Alaaaaaaaaaaaaarming");
       sound.play();
     }
 
